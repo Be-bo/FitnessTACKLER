@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/listitemexercisebackground"
+    android:id="@+id/root_exercise_item"
+    >
+
+    <TextView
+        android:id="@+id/exercise_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_margin="12dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_set_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Target"
+            android:layout_marginRight="69dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final"
+            android:layout_marginLeft="48dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_set"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"
+        android:animateLayoutChanges="true"
+        android:visibility="gone">
+
+        <include
+
+            layout="@layout/exercise_set_item"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/add_set_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add set"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/action_button_selector"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/ic_add_white_18dp"
+        android:paddingRight="12dp"
+        android:paddingLeft="8dp"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
